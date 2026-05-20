@@ -649,15 +649,17 @@ h1, h2, h3 {
 /* Offers Sidebar */
 .offers-sidebar {
     position: fixed;
-    top: 25%;
-    right: -320px; /* Oculto por defecto */
-    width: 320px;
+    top: 15vh;
+    right: -340px; /* Oculto por defecto */
+    width: 340px;
+    max-height: 80vh;
     background: var(--white);
     box-shadow: -5px 0 25px rgba(0,0,0,0.15);
     border-radius: 20px 0 0 20px;
     z-index: 1001; /* Por encima de todo */
     transition: right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .offers-sidebar.open {
@@ -667,30 +669,62 @@ h1, h2, h3 {
 .offers-toggle {
     position: absolute;
     top: 30px;
-    left: -50px;
-    width: 50px;
-    height: 70px;
+    left: -55px; /* Ligeramente más ancho para la palabra */
+    width: 55px;
+    height: auto;
+    padding: 10px 0;
     background: #009E60; /* Verde placa L */
     border: none;
     border-radius: 10px 0 0 10px;
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: -5px 0 10px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+    gap: 2px;
 }
 
 .offers-toggle:hover {
     transform: scale(1.05);
 }
 
+.offers-label {
+    color: white;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
 .l-plate {
     color: white;
-    font-size: 40px;
+    font-size: 34px;
     font-weight: 900;
     font-family: Arial, sans-serif;
     line-height: 1;
+}
+
+.offers-content {
+    padding: 30px 20px;
+    overflow-y: auto;
+}
+
+/* Custom Scrollbar for offers */
+.offers-content::-webkit-scrollbar {
+    width: 6px;
+}
+.offers-content::-webkit-scrollbar-track {
+    background: #f1f5f9; 
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.offers-content::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 10px;
+}
+.offers-content::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; 
 }
 
 .offers-content h3 {
@@ -717,22 +751,106 @@ h1, h2, h3 {
 
 .offer-item h4 {
     color: var(--secondary);
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 800;
 }
 
-.offer-item p {
+.offer-price {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--primary);
+    float: right;
+    margin-top: -5px;
+}
+
+.offer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.offer-list li {
     font-size: 13px;
     color: var(--text-dark);
-    margin-bottom: 10px;
-    line-height: 1.4;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
 }
 
-.btn-sm {
-    padding: 8px 15px;
+.offer-list li::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.tasa-notice {
+    font-size: 11px;
+    color: #DC2626; /* Color de advertencia distintivo */
+    background: #FEF2F2;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    border: 1px solid #FECACA;
+}
+
+.tasa-notice i {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.offer-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-whatsapp-small {
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
     font-size: 13px;
-    width: 100%;
-    display: block;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.btn-whatsapp-small:hover {
+    background: #20BA5A;
+    transform: translateY(-2px);
+}
+
+.btn-call-small {
+    background: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.btn-call-small:hover {
+    background: var(--bg-light);
+    transform: translateY(-2px);
 }
 
 /* Animations */
