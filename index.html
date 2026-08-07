@@ -1,438 +1,409 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autoescuela Europa Azuqueca | Sácate el carnet a la primera</title>
-    <meta name="description"
-        content="La mejor autoescuela en Azuqueca de Henares y Guadalajara. Sácate el carnet de conducir rápido con profesores pacientes y expertos. ¡Reserva tu plaza!">
+    <title>Autoescuela Eurovia | Tu Carnet de Conducir en Torrejón de Ardoz</title>
+    <meta name="description" content="Sácate el carnet de conducir en Torrejón de Ardoz con Autoescuela Eurovia. Formación personalizada, teórica online y profesores expertos. ¡Matricúlate hoy!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body>
+
+    <!-- Header / Navbar -->
     <header class="header">
-        <nav class="nav container">
+        <div class="container">
             <div class="logo">
-                <span class="logo-text">EUROPA<span>AUTOESCUELA</span></span>
+                <a href="index.html">
+                    <img src="auto7.jpeg" alt="Autoescuela Eurovia" class="logo-img">
+                </a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Permisos</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
-                <li><a href="#metodo">Método</a></li>
-                <li><a href="#contacto" class="btn btn-accent">Matrícula Online</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Cursos</a></li>
+                    <li><a href="#ventajas">Ventajas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="https://wa.me/611003747" class="btn btn-primary btn-header">¡Inscríbete Ya!</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="inicio" class="hero">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <span class="badge">Azuqueca de Henares / Guadalajara</span>
-                    <h1>Sácate el carnet a la primera con quienes <span>más te cuidan</span></h1>
-                    <p>Olvídate de los nervios. En Autoescuela Europa combinamos paciencia, tecnología y un método
-                        probado para que conduzcas con seguridad desde el primer día.</p>
-                    <div class="hero-btns">
-                        <a href="#contacto" class="btn btn-large btn-primary">Reserva tu plaza hoy</a>
-                        <a href="#servicios" class="btn btn-large btn-outline">Ver permisos</a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <strong>+90%</strong>
-                            <span>Aprobados 1ª</span>
-                        </div>
-                        <div class="stat">
-                            <strong>15+</strong>
-                            <span>Años de experiencia</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="fachada.jpeg" alt="Coche de Autoescuela Europa" class="img-main">
-                    <div class="floating-card">
-                        <i class="fas fa-check-circle"></i>
-                        <div>
-                            <strong>Profesores Pacientes</strong>
-                            <span>Pregunta por Celia o Lucía</span>
-                        </div>
-                    </div>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text animate-fade-in">
+                <h1>Tu carnet de conducir en <span class="highlight">Torrejón</span>, más fácil que nunca</h1>
+                <p>Formación personalizada, teórica online y profesores con 20 años de experiencia.</p>
+                <div class="hero-btns">
+                   
+                    <a href="#servicios" class="btn btn-outline btn-lg">Ver Permisos</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Social Proof -->
-        <section class="testimonials">
-            <div class="container">
-                <h2 class="section-title">Lo que dicen nuestros alumnos</h2>
-                <div class="testimonial-slider" id="testimonialSlider">
-                    <div class="testimonial-track">
-                        <!-- Slide 1 -->
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p>"100% Recomendable, excelente atención al público por parte de Lucía, hace todo lo
-                                posible para acomodarse a tu horario y muy maja, ayudándote en todo el proceso. Por
-                                parte de las clases prácticas agradezco a Celia por enseñarme y preocuparse de sacar mi
-                                examen adelante, también muy maja y buena profesora"</p>
-                            <div class="user">
-                                <img src="https://i.pravatar.cc/150?u=1" alt="Alumno">
-                                <div>
-                                    <strong>YerayToni</strong>
-                                    <span>Carnet B</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p>"He tenido una experiencia muy buena con la autoescuela, Lucía organiza los horarios de
-                                forma que le vengan bien siempre al alumno y su atención es buena también. Celia es una
-                                gran profesional con mucha dedicación por su trabajo"</p>
-                            <div class="user">
-                                <img src="https://i.pravatar.cc/150?u=2" alt="Alumno">
-                                <div>
-                                    <strong>Javier JiGa</strong>
-                                    <span>Carnet A2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p>"Muy buena experiencia, Celia tiene mucha paciencia y te explica las cosas claras. Lucía
-                                muy atenta y muy organizada. Me saque el practico a la primera."</p>
-                            <div class="user">
-                                <img src="https://i.pravatar.cc/150?u=3" alt="Alumno">
-                                <div>
-                                    <strong>Jair Otoya</strong>
-                                    <span>Carnet B</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 4 -->
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p>"Simplemente maravilloso. Lucía es un encanto y te da mil facilidades en temas de
-                                horarios y dudas. Celia es una muy muy buena profesora."</p>
-                            <div class="user">
-                                <img src="https://i.pravatar.cc/150?u=4" alt="Alumno">
-                                <div>
-                                    <strong>Claudia T.</strong>
-                                    <span>Carnet B</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 5 -->
-                        <div class="testimonial-card">
-                            <div class="stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p>"Recomiendo muchísimo esta autoescuela. Gracias Lucía por tu paciencia y Celia, si no es
-                                por ti no apruebo, gracias por enseñarme tan bien."</p>
-                            <div class="user">
-                                <img src="https://i.pravatar.cc/150?u=5" alt="Alumno">
-                                <div>
-                                    <strong>Angela R.</strong>
-                                    <span>Carnet B</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Trust Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000">+0</div>
+                    <div class="stat-label">Alumnos Satisfechos</div>
                 </div>
-                <div class="testimonials-cta" style="text-align: center; margin-top: 3rem;">
-                    <a href="https://www.google.com/maps/place/Autoescuela+Europa/@40.5647231,-3.2683426,17z/data=!4m8!3m7!1s0xd424d689dcec2f1:0xa09b8c9433c1482d!8m2!3d40.5647231!4d-3.2683426!9m1!1b1!16s%2Fg%2F1td_vjzk?entry=ttu"
-                        target="_blank" class="btn btn-outline">Ver todas las reseñas en Google</a>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95">0%</div>
+                    <div class="stat-label">Aprobados 1ª</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-label">Centros en Torrejón</div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Services -->
-        <section id="servicios" class="services">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Elige tu permiso</h2>
-                    <p>Formación adaptada a tus necesidades y ritmo.</p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="icon"><i class="fas fa-car"></i></div>
+    <!-- Services Section -->
+    <section id="servicios" class="services section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Permisos</h2>
+                <p>Elige el que mejor se adapte a tus necesidades</p>
+            </div>
+            <div class="services-grid">
+                <!-- Card Permiso B -->
+                <div class="service-card animate-scroll">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=600" alt="Coche de prácticas">
+                    </div>
+                    <div class="card-content">
                         <h3>Permiso B</h3>
-                        <p>Coches modernos, clases flexibles y un método enfocado en la seguridad vial real.</p>
-                        <ul class="features">
-                            <li><i class="fas fa-check"></i> Teórica presencial y online</li>
-                            <li><i class="fas fa-check"></i> Prácticas en zona de examen</li>
-                        </ul>
-                    </div>
-                    <div class="service-card highlighted">
-                        <div class="icon"><i class="fas fa-motorcycle"></i></div>
-                        <h3>Motos (A, A1, A2)</h3>
-                        <p>Domina las dos ruedas con instructores expertos en seguridad y técnica de conducción.</p>
-                        <ul class="features">
-                            <!-- <li><i class="fas fa-check"></i> Pista propia</li>
-                            <li><i class="fas fa-check"></i> Equipamiento incluido</li> -->
-                        </ul>
+                        <p>Coche manual o automático. Formación adaptada a tu ritmo con los mejores profesionales.</p>
+                        
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Offers Section -->
-        <section id="ofertas" class="offers">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Ofertas Especiales</h2>
-                    <p>Elige el pack que mejor se adapte a ti y ahorra en tu formación.</p>
-                </div>
-
-                <!-- Category 1: Completo -->
-                <div class="offer-category bg-white">
-                    <h3 class="category-title">Pack Carnet Completo <small>(Teórico + Práctico)</small></h3>
-                    <div class="offers-grid">
-                        <!-- Oferta 1 -->
-                        <div class="offer-card border-blue">
-                            <div class="offer-header">OFERTA 1</div>
-                            <h4>PACK CARNET COMPLETO</h4>
-                            <ul class="offer-list">
-                                <li>MATRICULA</li>
-                                <li>LIBRO</li>
-                                <li>APP TEST, CON VIDEOS EXPLICATIVOS</li>
-                                <li>1 EXAMEN TEORICO</li>
-                                <li>1 EXAMEN PRACTICO</li>
-                                <li>1 TASA DE TRAFICO</li>
-                                <li>10 CLASES DE COCHE</li>
-                            </ul>
-                            <div class="offer-footer">
-                                <p class="offer-note">*NO INCLUIDAS SEGUNDAS OPORTUNIDADES DE EXAMEN*</p>
-                                <p class="offer-note">*CLASES PRACTICAS EXTRAS SE PAGARAN APARTE*</p>
-                            </div>
-                            <a href="#" class="btn btn-primary btn-block whatsapp-offer" data-pack="OFERTA 1 - PACK CARNET COMPLETO (10 clases)">Pide aquí tu presupuesto</a>
-                        </div>
-
-                        <!-- Oferta 2 -->
-                        <div class="offer-card border-blue">
-                            <div class="offer-header">OFERTA 2</div>
-                            <h4>PACK CARNET COMPLETO</h4>
-                            <ul class="offer-list">
-                                <li>MATRICULA</li>
-                                <li>LIBRO</li>
-                                <li>APP TEST, CON VIDEOS EXPLICATIVOS</li>
-                                <li>1 EXAMEN TEORICO</li>
-                                <li>1 EXAMEN PRACTICO</li>
-                                <li>1 TASA DE TRAFICO</li>
-                                <li>20 CLASES DE COCHE</li>
-                            </ul>
-                            <div class="offer-footer">
-                                <p class="offer-note">*NO INCLUIDAS SEGUNDAS OPORTUNIDADES DE EXAMEN*</p>
-                                <p class="offer-note">*CLASES PRACTICAS EXTRAS SE PAGARAN APARTE*</p>
-                            </div>
-                            <a href="#" class="btn btn-primary btn-block whatsapp-offer" data-pack="OFERTA 2 - PACK CARNET COMPLETO (20 clases)">Pide aquí tu presupuesto</a>
-                        </div>
+                <!-- Card Permiso A2 -->
+                <div class="service-card animate-scroll">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=600" alt="Moto de prácticas">
+                    </div>
+                    <div class="card-content">
+                        <h3>Permiso A2</h3>
+                        <p>Domina las dos ruedas con seguridad. Circuito propio y motos nuevas de última generación.</p>
+                        
                     </div>
                 </div>
-
-                <!-- Category 2: Práctico -->
-                <div class="offer-category bg-blue">
-                    <h3 class="category-title text-white">¿Solo necesitas la parte práctica?</h3>
-                    <div class="offers-grid">
-                        <!-- Oferta 3 -->
-                        <div class="offer-card">
-                            <div class="offer-header">OFERTA 3</div>
-                            <h4>PACK PARTE PRACTICA</h4>
-                            <ul class="offer-list">
-                                <li>MATRICULA</li>
-                                <li>TASA DE TRASLADO</li>
-                                <li>10 CLASES DE COCHE</li>
-                                <li>1 EXAMEN PRACTICO</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-block whatsapp-offer" data-pack="OFERTA 3 - PACK PARTE PRACTICA (10 clases)">Pide aquí tu presupuesto</a>
-                        </div>
-
-                        <!-- Oferta 4 -->
-                        <div class="offer-card">
-                            <div class="offer-header">OFERTA 4</div>
-                            <h4>PACK PARTE PRACTICA</h4>
-                            <ul class="offer-list">
-                                <li>MATRICULA</li>
-                                <li>TASA DE TRASLADO</li>
-                                <li>20 CLASES DE COCHE</li>
-                                <li>1 EXAMEN PRACTICO</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-block whatsapp-offer" data-pack="OFERTA 4 - PACK PARTE PRACTICA (20 clases)">Pide aquí tu presupuesto</a>
-                        </div>
-
-                        <!-- Oferta 5 -->
-                        <div class="offer-card">
-                            <div class="offer-header">OFERTA 5</div>
-                            <h4>PACK PARTE PRACTICA</h4>
-                            <ul class="offer-list">
-                                <li>MATRICULA</li>
-                                <li>10 CLASES DE COCHE</li>
-                                <li>1 EXAMEN PRACTICO</li>
-                                <li>TASA DE TRÁFICO</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-block whatsapp-offer" data-pack="OFERTA 5 - PACK PARTE PRACTICA (10 clases)">Pide aquí tu presupuesto</a>
-                        </div>
-
-                        <!-- Oferta 6 -->
-                        <div class="offer-card">
-                            <div class="offer-header">OFERTA 6</div>
-                            <h4>PACK PARTE PRACTICA</h4>
-                            <ul class="offer-list">
-                                <li>MATRICULA</li>
-                                <li>20 CLASES DE COCHE</li>
-                                <li>1 EXAMEN PRACTICO</li>
-                                <li>1 TASA DE TRAFICO</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-block whatsapp-offer" data-pack="OFERTA 6 - PACK PARTE PRACTICA (20 clases)">Pide aquí tu presupuesto</a>
-                        </div>
+                <!-- Card Cursos Intensivos -->
+                <div class="service-card animate-scroll">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=600" alt="Estudio intensivo">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cursos Intensivos</h3>
+                        <p>¿Tienes prisa? Sácate la teórica en solo 4 días con nuestro método exclusivo de alta eficacia.</p>
+                       
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Method -->
-        <section id="metodo" class="method">
-            <div class="container grid-2">
-                <div class="method-image">
-                    <img src="coche-europa.jpg" alt="Método Europa">
+    <!-- Advantages Section -->
+    <section id="ventajas" class="advantages section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué elegir Eurovia?</h2>
+                <p>Tecnología y experiencia al servicio de tu formación</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-item animate-scroll">
+                    <div class="icon-box">
+                        <i data-lucide="monitor"></i>
+                    </div>
+                    <h3>Test Online 24/7</h3>
+                    <p>Accede a nuestra plataforma desde cualquier dispositivo y practica donde quieras.</p>
                 </div>
-                <div class="method-content">
-                    <h2 class="section-title">El Método Europa: ¿Por qué nosotros?</h2>
-                    <div class="method-items">
-                        <div class="method-item">
-                            <div class="number">01</div>
-                            <div>
-                                <h4>Horarios que se adaptan a ti</h4>
-                                <p>Sabemos que estudias o trabajas. Tenemos clases desde temprano hasta última hora de
-                                    la tarde.</p>
-                            </div>
+                <div class="advantage-item animate-scroll">
+                    <div class="icon-box">
+                        <i data-lucide="car"></i>
+                    </div>
+                    <h3>Coches Nuevos</h3>
+                    <p>Aprende con vehículos modernos, cómodos y equipados con la última tecnología.</p>
+                </div>
+                <div class="advantage-item animate-scroll">
+                    <div class="icon-box">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <h3>Horarios Flexibles</h3>
+                    <p>En las clases practicas nos adaptamos a tu horario.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historias de Éxito (Bento Grid) -->
+    <section id="testimonios" class="reviews section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Historias de Éxito en <span class="highlight">Torrejón</span></h2>
+                <div class="google-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/><path fill="none" d="M1 1 23 23"/></svg>
+                    <span>4.9/5 Estrellas en Google Maps</span>
+                    <span class="verified-badge"><i data-lucide="badge-check"></i> Perfiles Verificados</span>
+                </div>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- 1. Ariadna -->
+                <div class="bento-item card-large animate-scroll">
+                    <div class="bento-badge">✅ Rapidez</div>
+                    <div class="review-header">
+                        <div class="stars">★★★★★</div>
+                        <div class="google-verified">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/><path fill="none" d="M1 1 23 23"/></svg>
                         </div>
-                        <div class="method-item">
-                            <div class="number">02</div>
-                            <div>
-                                <h4>App de Test Premium</h4>
-                                <p>Practica desde el móvil con preguntas actualizadas de la DGT. La misma interfaz que
-                                    en el examen.</p>
-                            </div>
+                    </div>
+                    <h3>"Teórico rápido y clases amenas"</h3>
+                    <p>"El teórico lo aprobé muy rápido. El profesor de prácticas, <span class="teacher-name">Alex</span>, es muy buen profesor, las clases se hacen muy amenas."</p>
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Ariadna+P&background=0047AB&color=fff" alt="Ariadna" class="avatar">
+                        <div class="reviewer-info">
+                            <strong>Ariadna Piwowarczyk Romero</strong>
+                            <span>Google Local Guide</span>
                         </div>
-                        <div class="method-item">
-                            <div class="number">03</div>
-                            <div>
-                                <h4>Flota de última generación</h4>
-                                <p>Coches nuevos, fáciles de conducir y equipados con la última tecnología de ayuda a la
-                                    conducción.</p>
-                            </div>
+                    </div>
+                </div>
+
+                <!-- 2. Nadia -->
+                <div class="bento-item animate-scroll">
+                    <div class="bento-badge">❤️ Motivación</div>
+                    <div class="review-header">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <h3>"Recuperé la confianza"</h3>
+                    <p>"Venía de otra autoescuela súper desanimada... Especialmente mi profe <span class="teacher-name">Alex</span>, que no me dejó rendirme."</p>
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Nadia+S&background=FACC15&color=000" alt="Nadia" class="avatar">
+                        <div class="reviewer-info">
+                            <strong>Nadia Sibari Sánchez</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Astrid -->
+                <div class="bento-item animate-scroll">
+                    <div class="bento-badge">✨ Confianza</div>
+                    <div class="review-header">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <h3>"Trato familiar desde el minuto 1"</h3>
+                    <p>"Iba llena de miedo. Apenas hablé con <span class="teacher-name">Mati</span> me dio tan buena vibra y seguridad."</p>
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Astrid+R&background=0047AB&color=fff" alt="Astrid" class="avatar">
+                        <div class="reviewer-info">
+                            <strong>Astrid Rodriguez</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Álvaro -->
+                <div class="bento-item card-wide animate-scroll">
+                    <div class="bento-badge">⚡ Tiempo Récord</div>
+                    <div class="review-header">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <h3>"¡Carnet en solo 2 meses y medio!"</h3>
+                    <p>"Ha sido una muy buena experiencia, <span class="teacher-name">Mati</span> y mi profe <span class="teacher-name">Alex</span> han sido muy buena compañía."</p>
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Alvaro+L&background=FACC15&color=000" alt="Álvaro" class="avatar">
+                        <div class="reviewer-info">
+                            <strong>Álvaro Lugo</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Víctor -->
+                <div class="bento-item animate-scroll">
+                    <div class="bento-badge">🧘 Experiencia 10</div>
+                    <div class="review-header">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <h3>"Aprender sin estrés"</h3>
+                    <p>"Trato excelente. Los profesores transmiten confianza y hacen que aprender sea fácil y seguro."</p>
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Victor+G&background=0047AB&color=fff" alt="Víctor" class="avatar">
+                        <div class="reviewer-info">
+                            <strong>Víctor González</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Marina -->
+                <div class="bento-item animate-scroll">
+                    <div class="bento-badge">🏆 A la Primera</div>
+                    <div class="review-header">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <h3>"La mejor de Torrejón"</h3>
+                    <p>"Gracias a <span class="teacher-name">Mati</span> y <span class="teacher-name">Miguel</span> por ayudarme a sacar todo a la primera."</p>
+                    <div class="reviewer">
+                        <img src="https://ui-avatars.com/api/?name=Marina&background=FACC15&color=000" alt="Marina" class="avatar">
+                        <div class="reviewer-info">
+                            <strong>Marina</strong>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact & Map -->
-        <section id="contacto" class="contact">
-            <div class="container grid-2">
-                <div class="contact-form-container">
-                    <h2>¿Hablamos?</h2>
-                    <p>Déjanos tus datos y te informamos de nuestras ofertas actuales sin compromiso.</p>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nombre completo</label>
-                            <input type="text" id="name" placeholder="Ej: Juan Pérez" required>
+    <!-- Map and Contact Section -->
+    <section id="contacto" class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info animate-scroll">
+                    <h2>Encuéntranos en Torrejón</h2>
+                    <p>Estamos ubicados en el corazón de Torrejón de Ardoz para tu comodidad.</p>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>C. Madrid, 12, 28850 Torrejón de Ardoz, Madrid</span>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">Teléfono</label>
-                            <input type="tel" id="phone" placeholder="600 000 000" required>
+                        <div class="detail-item">
+                            <i data-lucide="phone"></i>
+                            <span>916 751 868</span>
                         </div>
-                        <div class="form-group">
-                            <label for="interest">Permiso de interés</label>
-                            <select id="interest">
-                                <option value="B">Coche (B)</option>
-                                <option value="Moto">Moto (A1, A2, A)</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Enviar solicitud</button>
-                    </form>
+                        
+                    </div>
+                    <div class="social-links contact-socials">
+                        <a href="https://share.google/8eJpR6GpwhmyklqPR" target="_blank" class="social-btn facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            Síguenos en Facebook
+                        </a>
+                        <a href="https://www.instagram.com/autoescuela_eurovia_torrejon?igsh=dmo1eHJuOWFtM29y" target="_blank" class="social-btn instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            Síguenos en Instagram
+                        </a>
+                    </div>
                 </div>
-                <div class="contact-info">
-                    <div class="info-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Visítanos</h4>
-                            <p>Av. de Meco, 1 <br>19200 Azuqueca de Henares, Guadalajara</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h4>Llámanos</h4>
-                            <p>609 70 52 27</p>
-                        </div>
-                    </div>
-                    <div class="map-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.95263990386!2d-3.2683426!3d40.564723099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424d689dcec2f1%3A0xa09b8c9433c1482d!2sAutoescuela%20Europa!5e0!3m2!1ses!2ses!4v1777916394159!5m2!1ses!2ses"
-                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+                <div class="map-container animate-scroll">
+                    <!-- Google Maps Embed -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.577599010872!2d-3.4792267000000003!3d40.462485099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4236e067b7625b%3A0xed1df725d2860265!2sC.%20Madrid%2C%2012%2C%2028850%20Torrej%C3%B3n%20de%20Ardoz%2C%20Madrid!5e0!3m2!1ses!2ses!4v1778779075031!5m2!1ses!2ses" 
+                        width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">EUROPA<span>AUTOESCUELA</span></span>
+                <div class="footer-brand">
+                    <span class="logo-euro">EURO</span><span class="logo-via">VIA</span>
+                    <p>Formando conductores seguros y responsables en Torrejón desde hace 20 años.</p>
+                    <div class="social-links">
+                        <a href="https://share.google/8eJpR6GpwhmyklqPR" target="_blank" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/autoescuela_eurovia_torrejon?igsh=dmo1eHJuOWFtM29y" target="_blank" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=100075416598769&sk=map" target="_blank"><i
-                            class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/autoescuelaeuropaazu?igsh=MXJocmluZGphZjJjbA=="
-                        target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/34609705227" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li>Aviso Legal</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Autoescuela Europa Azuqueca. Todos los derechos reservados.</p>
+                <p>&copy; 2026 Autoescuela Eurovia. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Modal de Aviso por Vacaciones -->
-    <div id="vacation-modal" class="modal-overlay">
-        <div class="modal-content">
-            <button class="modal-close" id="close-modal">&times;</button>
-            <div class="modal-body">
-                <img src="aviso-vacaciones.jpg" alt="Aviso de Vacaciones Autoescuela Europa">
+    <!-- Panel Lateral de Ofertas (L) -->
+    <div class="offers-sidebar" id="offers-sidebar">
+        <button class="offers-toggle" id="offers-toggle" aria-label="Ver Ofertas">
+            <span class="offers-label">OFERTAS</span>
+            <span class="l-plate">L</span>
+        </button>
+        <div class="offers-content">
+            <h3>Ofertas Exclusivas</h3>
+            
+            <div class="offer-item">
+                <div class="offer-price">510 €</div>
+                <h4>Permiso B</h4>
+                <ul class="offer-list">
+                    <li>Matrícula y Libro</li>
+                    <li>App Test 3 Meses</li>
+                    <li>Profesor Presencial</li>
+                    <li>1 Examen Teórico</li>
+                    <li>1 Tramitación Teórico</li>
+                    <li>10 Clases de 45 min</li>
+                    <li>1 Tramitación Práctico</li>
+                </ul>
+                <div class="tasa-notice">
+                    <i data-lucide="info"></i> No incluye Tasas Oficiales de Tráfico (94,05€)
+                </div>
+                <div class="offer-actions">
+                    <a href="https://wa.me/34611003747?text=Hola,%20quiero%20preguntar%20por%20la%20oferta%20del%20Permiso%20B%20de%20510€" target="_blank" class="btn-whatsapp-small"><i data-lucide="message-circle"></i> WhatsApp</a>
+                    <a href="tel:+34916751868" class="btn-call-small"><i data-lucide="phone"></i> Llamar</a>
+                </div>
+            </div>
+
+            <div class="offer-item">
+                <h4>Solo Práctico</h4>
+                <ul class="offer-list">
+                    <li>Matrícula: <strong>150€</strong></li>
+                    <li>Bono 10 Clases: <strong>350€</strong></li>
+                    <li>Examen Práctico: <strong>125€</strong></li>
+                    <li>Tramitación: <strong>80€</strong></li>
+                    <li>Tasa Traslado: <strong>8,67€</strong></li>
+                    <li>Tasa Renovación: <strong>94,05</strong></li>
+                </ul>
+                <div class="offer-actions">
+                    <a href="https://wa.me/34611003747?text=Hola,%20quiero%20preguntar%20por%20las%20tarifas%20de%20Solo%20Práctico" target="_blank" class="btn-whatsapp-small"><i data-lucide="message-circle"></i> WhatsApp</a>
+                    <a href="tel:+34916751868" class="btn-call-small"><i data-lucide="phone"></i> Llamar</a>
+                </div>
+            </div>
+
+            <div class="offer-item">
+                <div class="offer-price">20 €</div>
+                <h4>Intensivos</h4>
+                <ul class="offer-list">
+                    <li>Sábados de 8:30 a 13:30</li>
+                    <li>Master Class de Test examen 5 horas</li>
+                <div class="offer-actions">
+                    <a href="https://wa.me/34611003747?text=Hola,%20quiero%20preguntar%20por%20la%20oferta%20de%20los%20intensivos%20" target="_blank" class="btn-whatsapp-small"><i data-lucide="message-circle"></i> WhatsApp</a>
+                    <a href="tel:+34916751868" class="btn-call-small"><i data-lucide="phone"></i> Llamar</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="main.js"></script>
-</body>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/611003747" class="whatsapp-float" target="_blank">
+        <i data-lucide="message-circle"></i>
+    </a>
 
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
 </html>
