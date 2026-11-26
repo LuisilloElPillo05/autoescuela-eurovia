@@ -105,6 +105,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Initialize animations
+   // Initialize animations
     animateOnScroll();
+
+    // --- LOGICA MODAL OFERTA ESPECIAL ---
+    const modal = document.getElementById('vacation-modal');
+    const closeModalBtn = document.getElementById('close-modal');
+
+    if (modal) {
+
+        // Mostrar modal tras 800 milisegundos
+        setTimeout(() => {
+            modal.classList.add('active');
+        }, 100);
+
+        // Función para cerrar modal
+        const closeModal = () => {
+            modal.classList.remove('active');
+        };
+
+        // Cerrar al pulsar la X
+        if (closeModalBtn) {
+            closeModalBtn.addEventListener('click', closeModal);
+        }
+
+        // Cerrar al pulsar fuera de la imagen
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    }
+
 });

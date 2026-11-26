@@ -1,7 +1,10 @@
 :root {
-    --primary: #0047AB; /* Azul Motor */
-    --secondary: #1E3A8A; /* Azul Oscuro */
-    --accent: #FACC15; /* Amarillo Tráfico */
+    --primary: #0047AB;
+    /* Azul Motor */
+    --secondary: #1E3A8A;
+    /* Azul Oscuro */
+    --accent: #FACC15;
+    /* Amarillo Tráfico */
     --text-dark: #1F2937;
     --text-light: #6B7280;
     --white: #FFFFFF;
@@ -37,7 +40,9 @@ body {
     padding: 100px 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 800;
     line-height: 1.2;
 }
@@ -66,15 +71,27 @@ h1, h2, h3 {
     flex-direction: column;
     line-height: 1;
 }
+
 .logo-img {
     width: 200px;
     height: 100px;
     margin-right: auto;
 }
 
-.logo-euro { color: var(--primary); }
-.logo-via { color: var(--accent); }
-.logo-sub { font-size: 10px; letter-spacing: 2px; color: var(--text-light); margin-top: 2px; }
+.logo-euro {
+    color: var(--primary);
+}
+
+.logo-via {
+    color: var(--accent);
+}
+
+.logo-sub {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--text-light);
+    margin-top: 2px;
+}
 
 .nav ul {
     display: flex;
@@ -364,7 +381,8 @@ h1, h2, h3 {
 
 /* Historias de Éxito (Bento Grid) */
 .reviews {
-    background-color: #f1f5f9; /* Un tono más distinguible */
+    background-color: #f1f5f9;
+    /* Un tono más distinguible */
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -483,6 +501,7 @@ h1, h2, h3 {
     .bento-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .card-wide {
         grid-column: span 1;
     }
@@ -493,6 +512,7 @@ h1, h2, h3 {
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
     }
+
     .card-large {
         grid-row: span 1;
     }
@@ -565,8 +585,15 @@ h1, h2, h3 {
     margin-bottom: 50px;
 }
 
-.footer-brand .logo-euro { color: var(--white); }
-.footer-brand p { margin-top: 20px; max-width: 300px; opacity: 0.7; }
+.footer-brand .logo-euro {
+    color: var(--white);
+}
+
+.footer-brand p {
+    margin-top: 20px;
+    max-width: 300px;
+    opacity: 0.7;
+}
 
 .social-links {
     display: flex;
@@ -622,14 +649,29 @@ h1, h2, h3 {
 
 .social-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     opacity: 0.9;
 }
 
-.footer-links h4 { margin-bottom: 20px; }
-.footer-links ul { list-style: none; }
-.footer-links a { color: var(--white); text-decoration: none; opacity: 0.7; transition: var(--transition); }
-.footer-links a:hover { opacity: 1; color: var(--accent); }
+.footer-links h4 {
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: var(--accent);
+}
 
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -652,13 +694,15 @@ h1, h2, h3 {
 .offers-sidebar {
     position: fixed;
     top: 15vh;
-    right: -340px; /* Oculto por defecto */
+    right: -340px;
+    /* Oculto por defecto */
     width: 340px;
     max-height: 80vh;
     background: var(--white);
-    box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
     border-radius: 20px 0 0 20px;
-    z-index: 1001; /* Por encima de todo */
+    z-index: 1001;
+    /* Por encima de todo */
     transition: right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: flex;
     flex-direction: column;
@@ -671,11 +715,13 @@ h1, h2, h3 {
 .offers-toggle {
     position: absolute;
     top: 30px;
-    left: -74px; /* Ligeramente más ancho para la palabra */
+    left: -74px;
+    /* Ligeramente más ancho para la palabra */
     width: 74px;
     height: auto;
     padding: 20px 0;
-    background: #009E60; /* Verde placa L */
+    background: #009E60;
+    /* Verde placa L */
     border: none;
     border-radius: 10px 0 0 10px;
     cursor: pointer;
@@ -683,7 +729,7 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: -5px 0 10px rgba(0,0,0,0.1);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     gap: 2px;
 }
@@ -698,9 +744,10 @@ h1, h2, h3 {
     font-weight: 1000;
     letter-spacing: 0.5px;
 }
+
 .l-plate {
     color: white;
-    font-size:52px;
+    font-size: 52px;
     font-weight: 900;
     font-family: Arial, sans-serif;
     line-height: 1;
@@ -715,17 +762,20 @@ h1, h2, h3 {
 .offers-content::-webkit-scrollbar {
     width: 6px;
 }
+
 .offers-content::-webkit-scrollbar-track {
-    background: #f1f5f9; 
+    background: #f1f5f9;
     border-radius: 10px;
     margin: 10px 0;
 }
+
 .offers-content::-webkit-scrollbar-thumb {
-    background: #cbd5e1; 
+    background: #cbd5e1;
     border-radius: 10px;
 }
+
 .offers-content::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8; 
+    background: #94a3b8;
 }
 
 .offers-content h3 {
@@ -747,7 +797,7 @@ h1, h2, h3 {
 
 .offer-item:hover {
     transform: translateX(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .offer-item h4 {
@@ -789,7 +839,8 @@ h1, h2, h3 {
 
 .tasa-notice {
     font-size: 11px;
-    color: #DC2626; /* Color de advertencia distintivo */
+    color: #DC2626;
+    /* Color de advertencia distintivo */
     background: #FEF2F2;
     padding: 8px;
     border-radius: 6px;
@@ -881,8 +932,8 @@ h1, h2, h3 {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .nav { 
-        display: none; 
+    .nav {
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
@@ -891,9 +942,9 @@ h1, h2, h3 {
         padding: 30px 20px;
         flex-direction: column;
         border-bottom: 2px solid var(--bg-light);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     }
-    
+
     .nav.active {
         display: flex;
     }
@@ -904,11 +955,13 @@ h1, h2, h3 {
         text-align: center;
     }
 
-    .mobile-menu-btn { display: block; }
+    .mobile-menu-btn {
+        display: block;
+    }
 
     /* Ajuste de la foto en móvil para que no se corte */
-    .hero { 
-        text-align: center; 
+    .hero {
+        text-align: center;
         background-size: contain;
         background-position: top center;
         background-repeat: no-repeat;
@@ -922,12 +975,993 @@ h1, h2, h3 {
     }
 
     .hero-content {
-        margin-top: 60%; /* Empuja el texto hacia la zona azul debajo de la foto */
+        margin-top: 60%;
+        /* Empuja el texto hacia la zona azul debajo de la foto */
     }
 
-    .hero h1 { font-size: 32px; }
-    .stats-grid { grid-template-columns: 1fr; gap: 30px; }
-    .hero-btns { justify-content: center; }
-    .contact-grid { grid-template-columns: 1fr; }
-    .section-padding { padding: 60px 0; }
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+}
+
+/* =========================================
+   NAVIDAD EUROVIA
+   Decoración navideña exclusiva
+========================================= */
+
+/* =========================================
+   DECORACIÓN NAVIDEÑA EUROVIA
+========================================= */
+
+/* ---------- HEADER ---------- */
+
+.header {
+    position: fixed;
+    overflow: visible;
+}
+
+/* Línea decorativa inferior */
+.header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg,
+            #0047AB,
+            #FACC15,
+            #c62828,
+            #FACC15,
+            #0047AB);
+    z-index: 4;
+}
+
+
+
+/* ---------- BOLAS NAVIDEÑAS ---------- */
+
+.eurovia-baubles {
+    position: absolute;
+    left: 0;
+    bottom: -65px;
+    width: 100%;
+    height: 65px;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.bauble {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: var(--cord);
+    background: #a7a7a7;
+}
+
+.bauble::before {
+    content: "";
+    position: absolute;
+    top: var(--cord);
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: var(--color);
+    border: 1px solid rgba(0, 0, 0, .12);
+    box-shadow:
+        inset -4px -4px 6px rgba(0, 0, 0, .2),
+        inset 3px 3px 5px rgba(255, 255, 255, .7),
+        0 2px 4px rgba(0, 0, 0, .15);
+}
+
+.bauble::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--cord) - 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 9px;
+    height: 5px;
+    border-radius: 3px 3px 0 0;
+    background: #c5a34a;
+}
+
+.bauble-1 {
+    left: 6%;
+    --cord: 12px;
+    --size: 19px;
+    --color: #c62828;
+}
+
+.bauble-2 {
+    left: 18%;
+    --cord: 27px;
+    --size: 25px;
+    --color: #e0b43c;
+}
+
+.bauble-3 {
+    left: 31%;
+    --cord: 10px;
+    --size: 17px;
+    --color: #174b91;
+}
+
+.bauble-4 {
+    left: 44%;
+    --cord: 23px;
+    --size: 22px;
+    --color: #c62828;
+}
+
+.bauble-5 {
+    left: 58%;
+    --cord: 9px;
+    --size: 18px;
+    --color: #e0b43c;
+}
+
+.bauble-6 {
+    left: 72%;
+    --cord: 29px;
+    --size: 25px;
+    --color: #174b91;
+}
+
+.bauble-7 {
+    left: 85%;
+    --cord: 12px;
+    --size: 19px;
+    --color: #c62828;
+}
+
+.bauble-8 {
+    left: 96%;
+    --cord: 24px;
+    --size: 22px;
+    --color: #e0b43c;
+}
+
+/* ---------- NIEVE MÁS VISIBLE ---------- */
+
+.christmas-snow {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.christmas-snow::before,
+.christmas-snow::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-repeat: repeat;
+    animation: eurovia-snowfall linear infinite;
+}
+
+.christmas-snow::before {
+    opacity: 0.9;
+    background-image:
+        radial-gradient(circle, #8da8c7 2px, transparent 3px),
+        radial-gradient(circle, #ffffff 3px, #9db3cc 4px, transparent 5px),
+        radial-gradient(circle, #6f8fb5 1.5px, transparent 2.5px);
+    background-size:
+        120px 140px,
+        190px 190px,
+        85px 100px;
+    background-position:
+        10px 20px,
+        60px 80px,
+        30px 50px;
+    animation-duration: 16s;
+}
+
+.christmas-snow::after {
+    opacity: 0.85;
+    background-image:
+        radial-gradient(circle, #ffffff 3px, #7897ba 4px, transparent 5px),
+        radial-gradient(circle, #9bb4d2 2px, transparent 3px);
+    background-size:
+        230px 210px,
+        150px 170px;
+    background-position:
+        100px 40px,
+        20px 100px;
+    animation-duration: 25s;
+}
+
+@keyframes eurovia-snowfall {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(50%);
+    }
+}
+
+/* ---------- MUÑECO DE NIEVE ---------- */
+
+.hero {
+    position: relative;
+}
+
+/* =========================================
+   MUÑECO DE NIEVE EUROVIA
+========================================= */
+
+.christmas-snowman {
+    position: absolute;
+    bottom: 22px;
+    right: 4%;
+    width: 105px;
+    height: 145px;
+    z-index: 3;
+    pointer-events: none;
+    animation: snowman-bob 3s ease-in-out infinite;
+}
+
+.snowman-head {
+    position: absolute;
+    top: 25px;
+    left: 31px;
+    width: 46px;
+    height: 43px;
+    background: #fff;
+    border: 2px solid #b7c9dc;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: inset -5px -4px 7px rgba(70, 100, 130, 0.15);
+}
+
+.snowman-hat {
+    position: absolute;
+    top: 10px;
+    left: 34px;
+    width: 39px;
+    height: 19px;
+    background: #c62828;
+    border-radius: 5px 5px 0 0;
+    transform: rotate(-8deg);
+    z-index: 3;
+}
+
+.snowman-hat::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: 49px;
+    height: 7px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.snowman-head::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 5px;
+    height: 5px;
+    background: #24364b;
+    border-radius: 50%;
+    box-shadow: 16px 0 #24364b;
+}
+
+.snowman-nose {
+    position: absolute;
+    top: 22px;
+    left: 19px;
+    width: 12px;
+    height: 6px;
+    background: #ed8a25;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.snowman-scarf {
+    position: absolute;
+    top: 62px;
+    left: 29px;
+    width: 51px;
+    height: 10px;
+    border-radius: 5px;
+    background: #c62828;
+    z-index: 4;
+}
+
+.snowman-scarf::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 32px;
+    width: 9px;
+    height: 22px;
+    background: #c62828;
+    border-radius: 0 0 4px 4px;
+}
+
+.snowman-body {
+    position: absolute;
+    top: 68px;
+    left: 18px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #b7c9dc;
+    box-shadow: inset -7px -5px 9px rgba(70, 100, 130, 0.16);
+}
+
+.snowman-body span {
+    position: absolute;
+    left: 31px;
+    width: 6px;
+    height: 6px;
+    background: #34465a;
+    border-radius: 50%;
+}
+
+.snowman-body span:nth-child(1) {
+    top: 17px;
+}
+
+.snowman-body span:nth-child(2) {
+    top: 32px;
+}
+
+.snowman-body span:nth-child(3) {
+    top: 47px;
+}
+
+.snowman-arm {
+    position: absolute;
+    top: 83px;
+    width: 27px;
+    height: 4px;
+    background: #80552e;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.snowman-arm-left {
+    left: 0;
+    transform: rotate(-25deg);
+}
+
+.snowman-arm-right {
+    right: 0;
+    transform: rotate(25deg);
+}
+
+@keyframes snowman-bob {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .christmas-snowman {
+        transform: scale(0.75);
+        transform-origin: bottom right;
+        right: 8px;
+        bottom: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .christmas-snowman {
+        animation: none;
+    }
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+    .eurovia-bauble {
+        --cord: 10px !important;
+    }
+
+    .eurovia-bauble::before {
+        width: 15px;
+        height: 15px;
+    }
+
+    .christmas-snowman {
+        width: 75px;
+        height: 110px;
+        transform: scale(0.75);
+        transform-origin: bottom right;
+        right: 8px;
+        bottom: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .christmas-snow::before,
+    .christmas-snow::after,
+    .christmas-snowman {
+        animation: none;
+    }
+}
+
+
+
+
+/* -----------------------------------------
+   3. DECORACIÓN DEL INICIO
+----------------------------------------- */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero::after {
+    content: "✦";
+    position: absolute;
+    top: 18%;
+    right: 9%;
+    color: #facc15;
+    font-size: 45px;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 2;
+
+    animation: eurovia-twinkle 3s ease-in-out infinite;
+}
+
+.hero-content::after {
+    content: "❄";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: #ffffff;
+    font-size: 30px;
+    opacity: 0.65;
+    pointer-events: none;
+
+    animation: eurovia-float 5s ease-in-out infinite;
+}
+
+@keyframes eurovia-twinkle {
+
+    0%,
+    100% {
+        opacity: 0.45;
+        transform: scale(0.85) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15) rotate(20deg);
+    }
+}
+
+@keyframes eurovia-float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(12deg);
+    }
+}
+
+
+/* -----------------------------------------
+   4. TARJETAS DE PERMISOS
+----------------------------------------- */
+
+.service-card {
+    position: relative;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image::after {
+    content: "✧";
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    color: #facc15;
+    font-size: 30px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    z-index: 2;
+
+    animation: eurovia-twinkle 3.5s ease-in-out infinite;
+}
+
+
+/* -----------------------------------------
+   5. VENTAJAS
+----------------------------------------- */
+
+.advantage-item {
+    position: relative;
+}
+
+.advantage-item:nth-child(1)::after,
+.advantage-item:nth-child(3)::after {
+    content: "✦";
+    position: absolute;
+    top: 0;
+    right: 12%;
+    color: #facc15;
+    font-size: 23px;
+    opacity: 0.8;
+    pointer-events: none;
+
+    animation: eurovia-twinkle 4s ease-in-out infinite;
+}
+
+.advantage-item:nth-child(3)::after {
+    animation-delay: 1.5s;
+}
+
+
+/* -----------------------------------------
+   6. RESEÑAS
+----------------------------------------- */
+
+.bento-item {
+    position: relative;
+}
+
+.bento-item::after {
+    content: "✧";
+    position: absolute;
+    bottom: 15px;
+    right: 17px;
+    color: #facc15;
+    font-size: 23px;
+    opacity: 0.65;
+    pointer-events: none;
+
+    animation: eurovia-twinkle 4s ease-in-out infinite;
+}
+
+
+/* -----------------------------------------
+   7. PANEL LATERAL DE OFERTAS
+----------------------------------------- */
+
+.offers-sidebar {
+    border: 1px solid rgba(250, 204, 21, 0.5);
+}
+
+.offers-content h3 {
+    position: relative;
+}
+
+.offers-content h3::after {
+    content: "✦";
+    color: #facc15;
+    margin-left: 9px;
+    display: inline-block;
+
+    animation: eurovia-twinkle 3s ease-in-out infinite;
+}
+
+.offer-item {
+    position: relative;
+}
+
+.offer-item::after {
+    content: "✧";
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    color: #facc15;
+    font-size: 18px;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.offers-toggle {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+
+/* -----------------------------------------
+   8. FOOTER
+----------------------------------------- */
+
+.footer {
+    position: relative;
+    border-top: 3px solid #facc15;
+}
+
+.footer::before {
+    content: "✦     ❄     ✧     ❄     ✦";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #facc15;
+    font-size: 19px;
+    letter-spacing: 12px;
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+
+/* -----------------------------------------
+   9. AJUSTES PARA MÓVIL
+----------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .header::after {
+        height: 12px;
+        bottom: -5px;
+        background-size:
+            100% 12px,
+            36px 12px,
+            54px 12px,
+            72px 12px;
+    }
+
+    .hero::after {
+        top: 12%;
+        right: 7%;
+        font-size: 30px;
+    }
+
+    .hero-content::after {
+        top: -15px;
+        right: 2%;
+        font-size: 21px;
+    }
+
+    .card-image::after {
+        font-size: 23px;
+        top: 9px;
+        right: 11px;
+    }
+
+    .advantage-item:nth-child(1)::after,
+    .advantage-item:nth-child(3)::after {
+        font-size: 19px;
+        right: 8%;
+    }
+
+    .bento-item::after {
+        font-size: 19px;
+        bottom: 10px;
+        right: 12px;
+    }
+
+    .footer::before {
+        font-size: 14px;
+        letter-spacing: 6px;
+    }
+
+    .christmas-snow::before {
+        background-size: 80px 110px, 120px 150px;
+    }
+
+    .christmas-snow::after {
+        background-size: 140px 170px, 100px 130px;
+    }
+}
+
+
+/* -----------------------------------------
+   10. RESPETO A MOVIMIENTO REDUCIDO
+----------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .christmas-snow::before,
+    .christmas-snow::after,
+    .hero::after,
+    .hero-content::after,
+    .card-image::after,
+    .advantage-item::after,
+    .bento-item::after,
+    .offers-content h3::after {
+        animation: none;
+    }
+}
+
+/* Gorro de Papá Noel en OFERTAS L */
+
+.offers-toggle {
+    overflow: visible;
+}
+
+.offers-santa-hat {
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: -25px;
+    left: -12px;
+    transform: rotate(-18deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* =====================================
+   DECORACIÓN LATERAL DEL HEADER
+===================================== */
+
+/* Cabalgata: extremo izquierdo */
+.christmas-caravan {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 26px;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+/* Decoración invernal: extremo derecho */
+.christmas-winter {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.winter-snowflake {
+    font-size: 22px;
+}
+
+.winter-snowman {
+    font-size: 31px;
+}
+
+.winter-star {
+    font-size: 24px;
+}
+
+.nav ul {
+    gap: 30px;
+}
+
+/* ANIMACIONES */
+
+@keyframes winter-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes winter-twinkle {
+
+    0%,
+    100% {
+        opacity: .7;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+/* TABLETS */
+
+@media (min-width: 769px) and (max-width: 1100px) {
+
+    .christmas-caravan {
+        font-size: 16px;
+        gap: 0;
+    }
+
+    .christmas-winter {
+        gap: 2px;
+    }
+
+    .winter-snowflake {
+        font-size: 15px;
+    }
+
+    .winter-snowman {
+        font-size: 21px;
+    }
+
+    .winter-star {
+        font-size: 17px;
+    }
+
+    .nav ul {
+        gap: 15px;
+    }
+
+    .christmas-gift {
+        font-size: 16px;
+    }
+}
+
+/* MÓVILES */
+
+@media (max-width: 768px) {
+
+    .christmas-caravan,
+    .christmas-winter,
+    .christmas-gift {
+        display: none;
+    }
+}
+
+/* ACCESIBILIDAD */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .winter-snowflake,
+    .winter-star {
+        animation: none;
+    }
+}
+
+/* ==========================================
+   MODAL DE AVISO POR VACACIONES
+   ========================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.85);
+    /* Tono oscuro a juego con la marca */
+    backdrop-filter: blur(8px);
+    z-index: 20000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: var(--white);
+    padding: 8px;
+    border-radius: 24px;
+    max-width: 580px;
+    /* Aumentado de 480px a 580px para mayor visibilidad */
+    width: 90%;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+    transform: scale(0.9);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #0f172a;
+    color: var(--white);
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    z-index: 20002;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close:hover {
+    background: var(--accent);
+    transform: scale(1.1) rotate(90deg);
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    display: block;
+}
+
+/* Optimización móvil para el modal */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 92%;
+        padding: 6px;
+    }
+
+    .modal-close {
+        top: 12px;
+        right: 12px;
+        width: 34px;
+        height: 34px;
+        font-size: 1.3rem;
+    }
+}
+
+.modal-call-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 10px;
+    background: var(--accent);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 14px;
+    transition: var(--transition);
+    box-sizing: border-box;
+}
+
+.modal-call-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
 }
